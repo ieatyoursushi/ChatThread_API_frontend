@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    
+    <div class="ms">
+        <div class="themeButton">
+
+        </div>
+        
+    </div>
+    <header>
+        <h2> Share something with (main thread) </h2>
+        <div class="posting">
+            <header>
+                <input id="userInput" type="text" placeholder="Post title">
+                <p id="charCountPost" style="margin:1px; font-weight:100"> </p>
+            </header>
+            <header>
+                <input id="msgInput" type="text" placeholder="Message">
+                <p id="charCountMsg" style="margin:1px; font-weight:100"> </p>
+            </header>
+            <button id="refresh" style="margin-bottom:18px;"> Post </button>
+        </div>
+    </header>
+    <div class="parentClass">
+        <div class="posts"></div>
+        <div class="disclaimer">
+            <h3> Live Post Updating (ignore this) </h3>
+            <div class = "readMoreDiv">
+                <p id="disclai"> <span class="textToggle"> read </span> </p>
+            </div>
+            <input type="checkbox" id="toggler">
+            <label for="toggler" style="font-weight:bold"> Live Post Mode</label>
+
+        </div>
+    </div>
+    <script>
+
+    </script>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="bgMode.js"></script>
+    <script type="module" src="readMore.js"></script>
+    <script type="module">
+        //update post height overflow to scroll if content in post div is > 500px
+        //looks like I have to change this to await api request again.
+    </script>
+</body>
+
+</html>
