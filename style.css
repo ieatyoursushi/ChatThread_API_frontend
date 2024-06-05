@@ -14,6 +14,7 @@ html, body {
     background-color: #333333;
     margin-top: 15px;
     word-break:break-word;
+     
 }
 .post a {
     color: inherit;
@@ -145,5 +146,8 @@ html, body {
     .disclaimer h3 {
         margin: 4px;
         font-size: 17.5px;
+    }
+    .post {
+        border-radius: 12px;
     }
 }
