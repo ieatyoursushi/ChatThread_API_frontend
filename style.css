@@ -118,6 +118,9 @@ html, body {
     color: grey;
     cursor: pointer;
 }
+footer {
+    padding-top: 5px;
+}
 @media(max-width: 450px) {
     .parentClass {
         display: flex;
