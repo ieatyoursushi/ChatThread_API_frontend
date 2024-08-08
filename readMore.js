@@ -35,8 +35,8 @@ const textToggler = new TextToggler(
     document.querySelector(".textToggle"),
     ".textToggle",
     true,
-    "Experience the convenience of automatically updated content on this web app by enabling live-post mode, which allows you to access the latest posts as they are added by others without the inconvinience of refreshing. <span class='readMore'>Keep in mind that this feature may cause some performance issues on mobile devices and may result in the occurrence of bugs or even a crash. However, if you choose not to enable this feature, the web application will still function like a standard comments section. <span class='textToggle'> <u>read less</u> </span>",
-    "Experience the convenience of automatically updated content on this web app by enabling live-post mode, which allows you to access the latest posts as they are added by others without the inconvinience of refreshing. <span class='textToggle'> <u>read more</u> </span>"
+    "Hello all, this web app is a little project I made a few years ago and am now officially hosting for some time as a previous student at Deer Valley. I have not finished this project and will likely not in the future unfortunately as I have moved on to tackling different projects that I will release in the upcoming future. For any comp sci or coding enthusiasts,  this specific project public on my github @ieatyoursushi repository: chatthread_api. Enjoy! (questions or concerns): gabewkung@ucsb.edu) <span class='textToggle'> <u>read less</u> </span>",
+    "Hello all, this web app is a little project I made a few years ago and am now officially hosting for some time as a previous student at Deer Valley. I have not finished this project and will likely not in the future unfortunately <span class='textToggle'> <u>read more</u> </span>"
 );
 textToggler.initialize();
 export {TextToggler}
