@@ -1,5 +1,10 @@
 //test 1: retrieving data via get request
-const fetchURL = "https://625af6e7-264e-4529-809d-af73d591ac9b-00-23lml8244ntak.janeway.replit.dev/api";
+const replitURL = "https://625af6e7-264e-4529-809d-af73d591ac9b-00-23lml8244ntak.janeway.replit.dev";
+const localHost = "http://localhost:3000"
+const railwayHost = "https://chatthreadapi-production.up.railway.app";
+
+const baseURL = railwayHost;
+const fetchURL = baseURL + "/api";
 function confirmPostToBackEnd() {
     fetch(fetchURL)
         .then(function(response) {
@@ -96,7 +101,7 @@ let timeFormatter = new Intl.DateTimeFormat('en-US', {
 which is why we are logging messages on both tests*/
 async function sendData(username, message) {
     return new Promise((resolve, reject) => {
-        fetch("https://625af6e7-264e-4529-809d-af73d591ac9b-00-23lml8244ntak.janeway.replit.dev/api",
+        fetch(baseURL + "/api",
             {
                 method: 'POST',
                 headers: {
@@ -134,7 +139,7 @@ function sleep(ms) {
 async function showData() {
     return new Promise(function(resolve, reject) {
         //this endpoint returns the entire comments array onload/when refreshed for obvious reasons
-        fetch("https://625af6e7-264e-4529-809d-af73d591ac9b-00-23lml8244ntak.janeway.replit.dev/api/history")
+        fetch(baseURL + "/api/history")
             .then(function(response) {
                 return response.json();
             }).then(function(data) {
@@ -353,7 +358,7 @@ function refreshDiv3() {
 function showData3() {
     return new Promise((resolve, reject) => {
         //this endpiont returns an array of the last 2 element of the comment object array aka the 2 most recent posts.
-        fetch("https://625af6e7-264e-4529-809d-af73d591ac9b-00-23lml8244ntak.janeway.replit.dev/api/history/last")
+        fetch(baseURL + "/api/history/last")
             .then(function(response) {
                 return response.json();
             }).then(function(data) {
