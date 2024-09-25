@@ -3,6 +3,7 @@ const replitURL = "https://625af6e7-264e-4529-809d-af73d591ac9b-00-23lml8244ntak
 const localHost = "http://localhost:3000"
 const railwayHost = "https://chatthreadapi-production.up.railway.app";
 
+
 const baseURL = railwayHost;
 const fetchURL = baseURL + "/api";
 function confirmPostToBackEnd() {
