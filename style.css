@@ -96,9 +96,11 @@ html, body {
     height:50px;
     width:50px;
     margin-left: 12px;
-    background-image: url('dvhs.png');
+    background-image: url('gauchos2.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    border-radius:10000px;
 }
 .titleDivydiv {
     display: flex;
