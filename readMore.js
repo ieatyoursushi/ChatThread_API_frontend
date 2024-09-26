@@ -1,4 +1,6 @@
 //boilerplate class used for the read more / read less function of a text
+
+let string1 = "Hello all, this is the new beta release of "
 class TextToggler {
     constructor(textElement, textToggle, textToggleAtt, readMode, expandedText, collapsedText) {
         this.textElement = textElement;
@@ -35,8 +37,8 @@ const textToggler = new TextToggler(
     document.querySelector(".textToggle"),
     ".textToggle",
     true,
-    "Hello all, this web app is a little project I made a few years ago for last year's ACE showcase and am now officially hosting for some time. I have not finished this project and will likely not in the future unfortunately as I have moved on to tackling different projects that I will release in the upcoming future. For any comp sci or coding enthusiasts,  this specific project public on my github @ieatyoursushi repository: chatthread_api. Enjoy! <span class='textToggle'> <u>read less</u> </span>",
-    "Hello all, this web app is a little project I made a few years ago for last year's ACE showcase and am now officially hosting for some time. I have not finished this project and will likely not in the future unfortunately <span class='textToggle'> <u>read more</u> </span>"
+    `${string1} Freakstagram, by Freakbook Inc. Enjoy! <span class='textToggle'> <u>read less</u> </span>`,
+    `${string1} <span class='textToggle'> <u>read more</u> </span>`
 );
 textToggler.initialize();
 export {TextToggler}
