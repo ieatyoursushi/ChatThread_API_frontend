@@ -37,7 +37,7 @@ const textToggler = new TextToggler(
     document.querySelector(".textToggle"),
     ".textToggle",
     true,
-    `${string1} Freakstagram, by Freakbook Inc. Enjoy! <span class='textToggle'> <u>read less</u> </span>`,
+    `${string1} Freakstagram, by Freakbook Inc. Enjoy! (We apologize for any inconveniences with the app) <span class='textToggle'> <u>read less</u> </span>`,
     `${string1} <span class='textToggle'> <u>read more</u> </span>`
 );
 textToggler.initialize();
